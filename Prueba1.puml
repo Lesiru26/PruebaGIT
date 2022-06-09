@@ -1,0 +1,22 @@
+@startuml
+annotation java.lang.Override
+class java.io.IOException
+class java.util.Scanner
+class java.util.logging.Level
+class java.util.logging.Logger
+class practicaherencia.Android
+class practicaherencia.GPS
+class practicaherencia.Linterna
+class practicaherencia.Pijiphone
+class practicaherencia.PracticaHerencia
+class practicaherencia.PracticaHerenciaSinmenu
+class practicaherencia.Telefono
+practicaherencia.Android ..> java.io.IOException
+practicaherencia.Android ..> java.util.logging.Level
+practicaherencia.Android ..> java.util.logging.Logger
+practicaherencia.Android --|> practicaherencia.Telefono
+practicaherencia.Pijiphone ..> java.lang.Override
+practicaherencia.Pijiphone --|> practicaherencia.Telefono
+practicaherencia.PracticaHerencia ..> java.util.Scanner
+practicaherencia.PracticaHerenciaSinmenu ..> java.util.Scanner
+@enduml
