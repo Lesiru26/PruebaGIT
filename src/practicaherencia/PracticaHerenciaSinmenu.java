@@ -21,6 +21,9 @@ public class PracticaHerenciaSinmenu {
 //        telGen.llamar();
 //        Pijiphone piji2 = new Pijiphone("rojo");
 //        Pijiphone piji3 = new Pijiphone("rojo");
+
+        int numGit = 19;
+
         Pijiphone telef1 = new Pijiphone("rojo");
         Pijiphone piji2 = new Pijiphone(telef1);
         Pijiphone piji3 = new Pijiphone(telef1);
