@@ -5,7 +5,7 @@
 package practicaherencia;
 
 /**
- *
+ * @version Buena
  * @author PACO
  */
 public class Telefono {
@@ -19,6 +19,11 @@ public class Telefono {
     private static int contadorGlobal;
     private Linterna linternaMovil = new Linterna();
 
+    /** 01
+     * Entra la información al construirse:
+     * @param marcaIn Marca del móvil
+     * @param colorIn Color del móvil
+     */
     public Telefono(String marcaIn, int precioIn, String colorIn) {
         this.marca = marcaIn;
         this.precio = precioIn;
@@ -26,34 +31,64 @@ public class Telefono {
         this.PUK = (int) ((Math.random() * 100000000));
     }
 
+    /** 02
+     * Da el PUK
+     * @return El dato es el puk
+     */
     public int getPUK() {
         return PUK;
     }
 
+    /** 03
+     * Da la marca
+     * @return marca del móvil
+     */
     public String getMarca() {
         return marca;
     }
 
+     /** 04
+     * Da el precio
+     * @return precio en euros
+     */
     public int getPrecio() {
         return precio;
     }
 
+     /** 05
+     * Da el contador
+     * @return contador de móviles vendidos
+     */
     public int getContador1() {
         return contador1;
     }
 
+    /** 06
+     * da el contador total
+     * @return contador total de todas las marcas
+     */
     public static int getContadorGlobal() {
         return contadorGlobal;
     }
 
+    /** 07
+     * Obtiene el color
+     */
     public String getColor() {
         return color;
     }
 
+    /** 08
+     * Da si la linterna está o no encendida
+     * @return estado de linterna
+     */
     public Linterna getLinternaMovil() {
         return linternaMovil;
     }
 
+    /** 09
+     * Simula sonido llamada
+     */
     public void llamar() {
         System.out.println("Marcando...");
         this.esperar(2);
@@ -72,15 +107,24 @@ public class Telefono {
 
     }
 
+    /** 10
+     * Apaga la linterna
+     */
     public void darLuz() {
         linternaMovil.encender();
     }
 
+    /** 11
+     * Enciende la linterna
+     */
     public void quitarLuz() {
         linternaMovil.apagar();
 
     }
 
+    /** 12
+     * Realiza la espera en segundos
+     */
     public void esperar(int segundos) {
 
         try {
