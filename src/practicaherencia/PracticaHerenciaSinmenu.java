@@ -22,7 +22,7 @@ public class PracticaHerenciaSinmenu {
 //        Pijiphone piji2 = new Pijiphone("rojo");
 //        Pijiphone piji3 = new Pijiphone("rojo");
 
-        int numGit = 33;
+        int numGit = 44;
 
         Pijiphone telef1 = new Pijiphone("rojo");
         Pijiphone piji2 = new Pijiphone(telef1);
